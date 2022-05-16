@@ -37,9 +37,8 @@ INSTALLED_APPS = [
 ]
 
 CORS_ALLOWED_ORIGINS = [
-    
     #! porta onde o frontend vai rodar
-    'http://localhost:8080',
+    'http://localhost:3000',
 ]
 
 MIDDLEWARE = [
