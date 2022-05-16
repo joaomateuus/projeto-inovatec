@@ -1,13 +1,13 @@
 <template>
   <div class="flex">
-    <v-app-bar-nav-icon @click.stop="drawer = !drawer" class="mt-4"></v-app-bar-nav-icon>
+    <v-app-bar-nav-icon @click.stop="drawer = !drawer" class=""></v-app-bar-nav-icon>
       <v-navigation-drawer v-model="drawer" dark hide-overlay left temporary>
         <div class="">
           <v-list nav dense>
             <v-list-item-group v-model="group"
               v-for="links in linkSidebar" :key="links">
                 <v-list-item class="">
-                  <v-list-item-title class="w-8 pt-2">
+                  <v-list-item-title class="">
                     <span class="">
                       <Nuxt-link :to="links.route">
                         {{ links.name }}

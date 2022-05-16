@@ -8,11 +8,11 @@
         <div class="flex flex-row items-center justify-between">
           <Sidebar />
           <NuxtLink to="/user">
-            <img class="h-12 w-12" src="https://cdn.icon-icons.com/icons2/2643/PNG/512/male_boy_person_people_avatar_icon_159358.png" alt="">
+            <img class="h-12 w-12" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="">
           </NuxtLink>
         </div>
         <div class="w-80">
-          <v-text-field rounded=true height="50" solo dense label="Pesquisar" light prepend-inner-icon="mdi-magnify" />
+          <v-text-field rounded="true" height="50" solo dense label="Pesquisar" light prepend-inner-icon="mdi-magnify" />
         </div>
       </div>
       <template v-slot:extension>
