@@ -1,15 +1,14 @@
 from rest_framework import serializers
-from .models import Cardapio
+from .models import Prato
 from nutricional.serializers import NutricionalSerializer
 
-class CardapioSerializer(serializers.ModelSerializer):
+class PratoSerializer(serializers.ModelSerializer):
     class Meta:
-        model = Cardapio
-        write_only_fields = ('nutricional', )
-        fields = ['id', 'nome', 'valor', 'detalhes', 'nutricional']
+        model = Prato
+        fields = ['id', 'nome', 'valor', 'detalhes', 'foto']
         
-class CardapioNutriSerializer(serializers.ModelSerializer):
+class PratoNutriSerializer(serializers.ModelSerializer):
     nutricional  = NutricionalSerializer()
     class Meta:
-        model = Cardapio
-        fields = ['id', 'nome', 'valor', 'detalhes', 'nutricional']
+        model = Prato
+        fields = ['id', 'nome', 'valor', 'detalhes', 'foto', 'nutricional']

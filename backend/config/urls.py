@@ -12,11 +12,11 @@ from drf_yasg.views import get_schema_view
 from drf_yasg import openapi
 
 # viewSets
-from cardapio.viewsets import CardapioViewSet
+from cardapio.viewsets import PratoViewSet
 from nutricional.viewsets import NutricionalViewSet
 
 router = DefaultRouter()
-router.register('cardapio', CardapioViewSet, basename='Cardapio')
+router.register('pratos', PratoViewSet, basename='Prato')
 router.register('nutricional', NutricionalViewSet)
 
 # configurção do swagger

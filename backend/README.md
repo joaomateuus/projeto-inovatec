@@ -28,8 +28,8 @@ $ pip install -r requirements.txt
 # Execute a aplicação no terminal
 $ python manage.py runserver
 
-# O servidor inciará na porta:8000 - acesse <http://localhost:8000/cardapio>
+# O servidor inciará na porta:8000 - acesse <http://localhost:8000/pratos>
 
-# Para ver informações nutricionais sobre um prato - acesse <http://localhost:8000/cardapio/id_do_prato>
+# Para ver informações nutricionais sobre um prato - acesse <http://localhost:8000/pratos/id_do_prato>
 
 # Para ver a documentação e todos os endpoints disponiveis - acesse <http://localhost:8000/docs/>

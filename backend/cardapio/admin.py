@@ -1,4 +1,4 @@
 from django.contrib import admin
-from .models import Cardapio
+from .models import Prato
 
-admin.site.register(Cardapio)
+admin.site.register(Prato)
