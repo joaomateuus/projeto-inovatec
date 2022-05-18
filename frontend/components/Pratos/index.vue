@@ -4,7 +4,7 @@
     v-for="prato in pratos" :key="prato.id"
     @click="$router.push(`foods/${prato.id}`)">
       <span class="flex flex-row h-fit w-screen p-4">
-        <img v-bin :src="sopa" class="h-28 w-36 rounded-full">
+        <img v-bin :src="`${prato.foto }`" class="h-28 w-36 rounded-full">
         <div class="flex flex-col items-start justify-center pr-2 ml-2">
           <h1 class="text-xl font-bold">{{ prato.nome }}</h1>
           <h1 class="text-xl">{{ prato.detalhes }}</h1>
@@ -27,7 +27,7 @@ export default {
   methods: {
     async gettingPratos() {
       try {
-        await this.$axios.get('/cardapio/').then((response) => {
+        await this.$axios.get('/pratos/').then((response) => {
           console.log(response);
           this.pratos = response.data;
         })
