@@ -1,7 +1,9 @@
 <template>
   <div class="flex flex-col items-center justify-center">
     <h1 class="text-2xl mt-2">Interface realidade aumentada</h1>
-    <img class="w-96 h-fit rounded-full mt-2" src="https://st2.depositphotos.com/3957801/5642/i/950/depositphotos_56423065-stock-photo-bacon-burger.jpg" alt="">
+      <div class="flex items-center justify-center mt-12 bg-blue-300 rounded-md h-52 w-72 ">
+        <h1>Camera Realidade aumentada</h1>
+      </div>
     <div class="h-80 w-screen bg-gray-300 mt-12 p-2 rounded-md p-4">
       <div class="flex flex-col items-center justify-center p-2">
         <h1 class="text-2xl">Valor Energetico: {{ infoNutri.valorEnergetico }}</h1>
@@ -26,7 +28,7 @@ export default {
   methods: {
     async gettingNutricionais() {
       try {
-        await this.$axios.get(`/cardapio/${ this.$route.params.id }`).then((response) => {
+        await this.$axios.get(`/pratos/${ this.$route.params.id }`).then((response) => {
           console.log(response);
           this.infoNutri = response.data.nutricional;
         })
