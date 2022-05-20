@@ -1,12 +1,26 @@
 <template>
     <div class="flex flex-col items-center justify-start">
       <div class="flex flex-col items-center justify-center">
-        <div class="w-screen h-36 bg-blue-300 flex items-center justify-center p-4">
-          <img class="h-32 w-32 border-blue-300 mt-16" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="">  
+        <div class="flex flex-col w-screen h-56 bg-blue-300 flex items-center justify-center p-4 pt-2">
+          <img class="h-32 w-32 border-blue-300" src="https://cdn-icons-png.flaticon.com/512/147/147144.png" alt="">  
+          <h2 class="mt-2 text-xl">João Mateus</h2>
+          <p class="text-lg">Cliente desde: 12/04/2022</p>
         </div>
-        <div class="mt-12">
-          <h1 class="text-4xl mb-12">João Mateus</h1>
-          <p class="text-xl">Cliente desde : 09/05/2022</p>
+        <div class="">
+          <v-card class="mx-auto" min-width="400" height="500" tile>
+            <v-list flat>
+              <v-list-item-group v-model="selectedItem" color="primary">
+                <v-list-item v-for="(item, i) in items" :key="i">
+                  <v-list-item-icon>
+                    <v-icon v-text="item.icon"></v-icon>
+                  </v-list-item-icon>
+                  <v-list-item-content class="ml-2">
+                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                  </v-list-item-content>
+                </v-list-item>
+              </v-list-item-group>
+            </v-list>
+          </v-card>
         </div>
       </div>
     </div>
@@ -16,7 +30,12 @@
 export default {
     name: 'index.vue',
     data: () => ({
-
+        selectedItem: 1,
+        items: [
+          { text: 'Menu', icon: 'mdi-clock' },
+          { text: 'Sobre', icon: 'mdi-account' },
+          { text: 'Avaliar', icon: 'mdi-flag' },
+        ],
     }),
 }
 </script>

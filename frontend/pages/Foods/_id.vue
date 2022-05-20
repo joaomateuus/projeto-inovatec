@@ -1,10 +1,10 @@
 <template>
   <div class="flex flex-col items-center justify-center">
     <h1 class="text-2xl mt-2">Interface realidade aumentada</h1>
-      <div class="flex items-center justify-center mt-12 bg-blue-300 rounded-md h-52 w-72 ">
-        <h1>Camera Realidade aumentada</h1>
+      <div class="flex items-center justify-center mt-4 bg-blue-300 rounded-md h-72 w-screen">
+        <Camera />
       </div>
-    <div class="h-80 w-screen bg-gray-300 mt-12 p-2 rounded-md p-4">
+    <div class="h-80 w-screen bg-gray-300 p-2 rounded-md p-4">
       <div class="flex flex-col items-center justify-center p-2">
         <h1 class="text-2xl">Valor Energetico: {{ infoNutri.valorEnergetico }}</h1>
         <h2 class="text-2xl">Carboidratos: {{ infoNutri.carboidratos }}</h2>
@@ -19,11 +19,12 @@
 </template>
 
 <script>
-
+import Camera from '../../components/Camera/index.vue'
 
 export default {
   data: () => ({
     infoNutri : [],
+    components: {Camera},
   }),
   methods: {
     async gettingNutricionais() {
