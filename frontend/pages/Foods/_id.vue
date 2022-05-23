@@ -34,24 +34,6 @@
     </div>
   </div>
 </template>
-      
-      
-      
-      
-      <!--
-        <div class="flex flex-col items-center justify-center p-2">
-        <h1 class="text-2xl">Valor Energetico: </h1>
-        <h2 class="text-2xl">Carboidratos: </h2>
-        <h2 class="text-2xl">Gorduras Totais: </h2>
-        <h2 class="text-2xl">Gorduras Saturadas:  </h2>
-        <h2 class="text-2xl">Gorduras Trans:  </h2>
-        <h2 class="text-2xl">Fibra Alimentar: </h2>
-        <h2 class="text-2xl">Valor Sódio:  </h2>
-      </div>
-      --->
-      
-     
- 
 
 <script>
 import Camera from '../../components/Camera/index.vue'
