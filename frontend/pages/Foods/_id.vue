@@ -1,22 +1,57 @@
 <template>
-  <div class="flex flex-col items-center justify-center">
-    <h1 class="text-2xl mt-2">Interface realidade aumentada</h1>
-      <div class="flex items-center justify-center mt-4 bg-blue-300 rounded-md h-72 w-screen">
+  <div class="flex flex-col items-center justify-center bg-gray-200">
+    <h1 class="text-2xl mt-4">Interface realidade aumentada</h1>
+      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-72 w-96">
         <Camera />
       </div>
-    <div class="h-80 w-screen bg-gray-300 p-2 rounded-md p-4">
-      <div class="flex flex-col items-center justify-center p-2">
-        <h1 class="text-2xl">Valor Energetico: {{ infoNutri.valorEnergetico }}</h1>
-        <h2 class="text-2xl">Carboidratos: {{ infoNutri.carboidratos }}</h2>
-        <h2 class="text-2xl">Gorduras Totais: {{ infoNutri.gordurasTotais }}</h2>
-        <h2 class="text-2xl">Gorduras Saturadas:  {{ infoNutri.gordurasSaturadas }}</h2>
-        <h2 class="text-2xl">Gorduras Trans:  {{ infoNutri.gordurasTrans }}</h2>
-        <h2 class="text-2xl">Fibra Alimentar: {{ infoNutri.fibraAlimentar }}</h2>
-        <h2 class="text-2xl">Valor Sódio:  {{ infoNutri.sodio }}</h2>
-      </div>
+    <div class="h-96 w-screen bg-gray-200 p-6 pt-12">
+      <v-simple-table height="130" class="rounded-md pt-2 pr-2">
+        <template v-slot:default>
+          <thead>
+            <tr>
+              <th class="text-left">Valor Energetico</th>
+              <th class="text-left">Carboidratos</th>
+              <th class="text-left">Gorduras Totais</th>
+              <th class="text-left">Gorduras Saturadas</th>
+              <th class="text-left">Gorduras Trans</th>
+              <th class="text-left">Fibra Alimentar</th>
+              <th class="text-left">Sódio</th>
+            </tr>
+          </thead>
+          <tbody>
+            <tr>
+              <td>{{ infoNutri.valorEnergetico }}</td>
+              <td>{{ infoNutri.carboidratos }}</td>
+              <td>{{ infoNutri.gordurasTotais }}</td>
+              <td>{{ infoNutri.gordurasSaturadas }}</td>
+              <td>{{ infoNutri.gordurasTrans }}</td>
+              <td>{{ infoNutri.fibraAlimentar }}</td>
+              <td>{{ infoNutri.sodio }}</td>
+            </tr>
+          </tbody>
+        </template>
+      </v-simple-table>
     </div>
   </div>
 </template>
+      
+      
+      
+      
+      <!--
+        <div class="flex flex-col items-center justify-center p-2">
+        <h1 class="text-2xl">Valor Energetico: </h1>
+        <h2 class="text-2xl">Carboidratos: </h2>
+        <h2 class="text-2xl">Gorduras Totais: </h2>
+        <h2 class="text-2xl">Gorduras Saturadas:  </h2>
+        <h2 class="text-2xl">Gorduras Trans:  </h2>
+        <h2 class="text-2xl">Fibra Alimentar: </h2>
+        <h2 class="text-2xl">Valor Sódio:  </h2>
+      </div>
+      --->
+      
+     
+ 
 
 <script>
 import Camera from '../../components/Camera/index.vue'

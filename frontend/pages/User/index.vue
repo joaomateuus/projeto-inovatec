@@ -14,8 +14,10 @@
                   <v-list-item-icon>
                     <v-icon v-text="item.icon"></v-icon>
                   </v-list-item-icon>
-                  <v-list-item-content class="ml-2">
-                    <v-list-item-title v-text="item.text"></v-list-item-title>
+                  <v-list-item-content class="ml-4">
+                    <Nuxt-link :to="item.route">
+                      <v-list-item-title v-text="item.text"></v-list-item-title>
+                    </Nuxt-link>
                   </v-list-item-content>
                 </v-list-item>
               </v-list-item-group>
@@ -32,9 +34,9 @@ export default {
     data: () => ({
         selectedItem: 1,
         items: [
-          { text: 'Menu', icon: 'mdi-clock' },
-          { text: 'Sobre', icon: 'mdi-account' },
-          { text: 'Avaliar', icon: 'mdi-flag' },
+          { text: 'Menu', icon: 'mdi-food', route:'/' },
+          { text: 'Sobre', icon: 'mdi-alert-circle', route:'/sobre' },
+          { text: 'Avaliar', icon: 'mdi-star', route:'/' },
         ],
     }),
 }
