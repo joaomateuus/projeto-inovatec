@@ -1,7 +1,7 @@
 <template>
-  <div class="flex flex-col items-center justify-center bg-gray-200">
-    <h1 class="text-2xl mt-4">Interface realidade aumentada</h1>
-      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-72 w-96">
+  <div class="flex flex-col items-center justify-center bg-gray-200 h-screen">
+    <img src="@/static/logo.png"  class="mt-4" alt="">
+      <div class="flex items-center justify-center mt-4 bg-black rounded-md max-h-44 max-w-sm">
         <Camera />
       </div>
     <div class="h-96 w-screen bg-gray-200 p-6 pt-12">
