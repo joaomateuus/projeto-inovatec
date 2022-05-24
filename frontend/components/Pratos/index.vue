@@ -28,7 +28,6 @@ export default {
     async gettingPratos() {
       try {
         await this.$axios.get('/pratos/').then((response) => {
-          console.log(response);
           this.pratos = response.data;
         })
       } catch (error) {

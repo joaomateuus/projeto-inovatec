@@ -47,7 +47,6 @@ export default {
     async gettingNutricionais() {
       try {
         await this.$axios.get(`/pratos/${ this.$route.params.id }`).then((response) => {
-          console.log(response);
           this.infoNutri = response.data.nutricional;
         })
       } catch (error) {
