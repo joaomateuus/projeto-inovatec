@@ -39,7 +39,7 @@ INSTALLED_APPS = [
 
 CORS_ALLOWED_ORIGINS = [
     #! porta onde o frontend vai rodar
-    'https://projeto-inovatec.vercel.app/',
+    'https://projeto-inovatec.vercel.app',
 ]
 
 MIDDLEWARE = [
