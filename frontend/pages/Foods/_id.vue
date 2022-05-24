@@ -5,7 +5,7 @@
         <Camera />
       </div>
     <div class="h-96 w-screen bg-gray-200 p-6 pt-12 mt-2">
-      <v-simple-table height="130" class="absolute rounded-md pt-2 pr-2">
+      <v-simple-table height="100" class="absolute rounded-md pt-2 pr-2">
         <template v-slot:default>
           <thead>
             <tr>
