@@ -1,6 +1,6 @@
 <template>
     <div>
-        <video id="video" height="200" width="350" autoplay />
+        <video id="video" height="50" width="350" autoplay />
     </div>
 </template>
 
