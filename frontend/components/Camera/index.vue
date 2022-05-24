@@ -1,5 +1,5 @@
 <template>
-    <div>
+    <div class="max-h-44 max-w-sm">
         <video id="video" height="50" width="350" autoplay />
     </div>
 </template>
