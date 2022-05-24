@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col items-center justify-center bg-gray-200 h-screen">
     <img src="@/static/logo.png"  class="mt-4" alt="">
-      <div class="flex items-center justify-center mt-4 bg-black rounded-md max-h-44 max-w-sm">
+      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-fit w-fit">
         <Camera />
       </div>
-    <div class="h-96 w-screen bg-gray-200 p-6 pt-12">
-      <v-simple-table height="130" class="rounded-md pt-2 pr-2">
+    <div class=" h-96 w-screen bg-gray-200 p-6 pt-12">
+      <v-simple-table height="130" class="absolute rounded-md pt-2 pr-2">
         <template v-slot:default>
           <thead>
             <tr>
