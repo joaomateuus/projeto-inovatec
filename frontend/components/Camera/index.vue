@@ -1,6 +1,6 @@
 <template>
     <div>
-        <video id="video" autoplay />
+        <video id="video" height="300" width="300" autoplay />
     </div>
 </template>
 
@@ -10,7 +10,7 @@ export default {
     methods: {
         startCamera() {
             navigator.mediaDevices
-            .getUserMedia({video:true, width:1000})
+            .getUserMedia({video:true})
             .then(stream => {
                 const videoElement = document.querySelector('#video');
                 videoElement.srcObject = stream;
