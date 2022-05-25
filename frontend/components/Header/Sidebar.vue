@@ -1,4 +1,4 @@
-<template>
+<template> 
   <div class="">
       <v-app-bar-nav-icon @click.stop="drawer = !drawer" />
       <v-spacer></v-spacer>

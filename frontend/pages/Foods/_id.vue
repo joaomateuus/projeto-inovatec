@@ -1,11 +1,11 @@
 <template>
   <div class="flex flex-col items-center justify-center bg-gray-200">
-    <h1 class="text-2xl mt-4">Interface realidade aumentada</h1>
-      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-72 w-96">
+    <img src="@/static/logo.png"  class="mt-4" alt="">
+      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-fit w-fit mt-8">
         <Camera />
       </div>
     <div class="h-96 w-screen bg-gray-200 p-6 pt-12">
-      <v-simple-table height="130" class="rounded-md pt-2 pr-2">
+      <v-simple-table height="100" class="rounded-md pt-2 pr-2">
         <template v-slot:default>
           <thead>
             <tr>
