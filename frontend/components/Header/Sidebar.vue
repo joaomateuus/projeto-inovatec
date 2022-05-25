@@ -5,7 +5,7 @@
       <v-navigation-drawer v-model="drawer"
       absolute left temporary 
       class="rounded-sm"
-      height="200" width="400">
+      height="200" width="450">
       <v-list nav dense flat>
         <a href="https://sites.google.com/view/modernmenu/p%C3%A1gina-inicial">
           <v-list-item class="flex">

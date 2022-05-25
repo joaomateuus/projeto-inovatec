@@ -1,5 +1,5 @@
 <template>
-  <div class="flex flex-col items-center justify-center bg-gray-200 h-screen pt-44">
+  <div class="flex flex-col items-center justify-center bg-gray-200 h-fit pt-4">
     <img src="@/static/logo.png"  class="" alt="">
       <div class="flex-col items-center justify-center h-fit w-fit mt-8">
         <h2>De permisão ao navegador para acessar a camera
@@ -7,7 +7,7 @@
         </h2>
         <Camera />
       </div>
-      <div class="flex flex-col items-center justify-center p-4 bg-blue-300 h-screen mt-4 rounded-sm">
+      <div class="flex flex-col items-center justify-center p-4 bg-blue-300 h-96 mt-4 rounded-sm">
         <h1 class="text-xl font-bold mb-2" >Valores Nutricionais</h1>  
         <v-simple-table height="100" class="rounded-md pt-2 pr-2">
         <template v-slot:default>
