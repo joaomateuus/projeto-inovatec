@@ -4,8 +4,8 @@
       <v-spacer></v-spacer>
       <v-navigation-drawer v-model="drawer"
       absolute left temporary 
-      class="rounded-sm"
-      height="200" width="300">
+      rounded
+      height="200" width="400">
       <v-list nav dense flat>
         <v-list-item-group v-model="group" 
         v-for="links in linkSidebar" :key="links"
