@@ -6,7 +6,7 @@
         <v-icon class="ml-40 mt-4">mdi-camera</v-icon>
         <Camera />
       </div>
-      <div class="flex flex-col items-center justify-center p-4 bg-blue-300 h-96 rounded-sm">
+      <div class="flex flex-col items-center justify-center p-4 bg-blue-300 h-96 mt-4 rounded-sm">
         <h1 class="text-xl font-bold mb-2" >Valores Nutricionais</h1>  
         <v-simple-table height="100" class="rounded-md pt-2 pr-2">
         <template v-slot:default>
