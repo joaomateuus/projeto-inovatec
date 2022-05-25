@@ -28,7 +28,9 @@ export default {
                     ideal: 1080,
                     max: 1440
                 },
-                facingMode: 'environment'
+                facingMode: {
+                    exact: 'environment'
+                }
             }
         }
     }),
