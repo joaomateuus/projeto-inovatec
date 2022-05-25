@@ -18,7 +18,7 @@
                 </a>
                 <v-list-item v-for="(item, i) in items" :key="i">
                   <v-list-item-icon>
-                    <v-icon v-text="item.icon"></v-icon>
+                    <v-icon v-text="item.icon"/>
                   </v-list-item-icon>
                   <v-list-item-content class="ml-4">
                     <Nuxt-link :to="item.route">

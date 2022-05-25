@@ -1,11 +1,15 @@
 <template>
-  <div class="flex flex-col items-center justify-center bg-gray-200 h-screen">
-    <img src="@/static/logo.png"  class="mt-4" alt="">
-      <div class="flex items-center justify-center mt-4 bg-black rounded-md h-fit w-fit mt-8">
+  <div class="flex flex-col items-center justify-center bg-gray-200 h-screen pt-44">
+    <img src="@/static/logo.png"  class="" alt="">
+      <div class="flex-col items-center justify-center h-fit w-fit mt-8">
+        <h2>De permisão ao navegador para acessar a camera
+          <v-icon>mdi-camera</v-icon>
+        </h2>
         <Camera />
       </div>
-    <div class="h-96 w-screen bg-gray-200 p-6 pt-12 mt-2">
-      <v-simple-table height="100" class="absolute rounded-md pt-2 pr-2">
+      <div class="flex flex-col items-center justify-center p-4 bg-blue-300 h-screen mt-4 rounded-sm">
+        <h1 class="text-xl font-bold mb-2" >Valores Nutricionais</h1>  
+        <v-simple-table height="100" class="rounded-md pt-2 pr-2">
         <template v-slot:default>
           <thead>
             <tr>
@@ -30,7 +34,14 @@
             </tr>
           </tbody>
         </template>
-      </v-simple-table>
+      </v-simple-table>  
+      <div class="flex-col items-center justify-center border-2 border-black bg-white h-fit w-74 p-4 mt-4 mb-4 rounded-md ">
+        <div class="flex">
+          <v-icon>mdi-alert</v-icon>
+          <h1 class="text-2xl font-bold ml-4">Aviso</h1>
+        </div>
+        <p class="text-xl text-red-600">Se voce estiver usando IOS (iphone)<br> A camera não está otimizada para o Safari</p>
+      </div>
     </div>
   </div>
 </template>
